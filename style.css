@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#introContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.imgRight {
+    justify-self: end;
+    align-self: self-end;
+}
+
+#introContainer h3 {
+    background-color: rgb(213, 26, 213);
+    padding: 0.5rem 2rem;
+    color: whitesmoke;
+    align-self: center;
+    border-radius: 0.4rem;
+}
+
+hr {
+    border: none;
+    border-top: 5px dotted purple;
+    width: 10%;
+    align-self: center;
+}
+
+.intro {
+    text-align: center;
+}
+
+#mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+}
+
+#mainContainer h3 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-self: center;
+}
+
+.subContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.subContainer h5 {
+    background-color: rgb(213, 26, 213);
+    padding: 0.5rem 2rem;
+    color: whitesmoke;
+    align-self: center;
+    border-radius: 0.4rem;
+}
+
+.profilesSection {
+    padding: 1rem;
+    gap: 0.5rem;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    margin: 0 auto; /* Center the profilesSection horizontally */
+}
+
+.profileCard {
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 30%;
+}
+
+.profileCard img {
+    height: 40%;
+    width: 40%;
+    padding-top: 0.3rem;
+    border-radius: 100%;
+    background-color: rgb(174, 166, 166);
+}
+
+.profileCard p {
+    font-weight: 700;
+}
+
+.positionOfEmployee {
+    font-style: italic;
+    color: rgba(244, 6, 244, 0.478);
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .profileCard {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        padding: 0.5rem;
+    }
+
+    .profileCard {
+        width: 100%;
+    }
+
+    #introContainer h3 {
+        padding: 0.3rem 1rem;
+    }
+
+    hr {
+        width: 20%;
+    }
+}
